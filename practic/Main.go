@@ -1,7 +1,6 @@
 package main
 
 import (
-	"encoding/json"
 	"fmt"
 )
 
@@ -215,14 +214,15 @@ func main() {
 	// fmt.Println(string(jsonData))
 
 	// 5 2)
-	jsonString := `{"id":1,"name":"Alice","email":"alice@gmail.com","age":20}`
+	// jsonString := `{"id":1,"name":"Alice","email":"alice@gmail.com","age":20}`
 
-	var user User
-	err := json.Unmarshal([]byte(jsonString), &user)
-	if err != nil {
-		fmt.Println("Ошибка: ", err)
-		return
-	}
-	fmt.Println("\nJSON to Struct: ")
-	fmt.Printf("%+v\n", user)
+	// var user User
+	// err := json.Unmarshal([]byte(jsonString), &user)
+	// if err != nil {
+	// 	fmt.Println("Ошибка: ", err)
+	// 	return
+	// }
+	// fmt.Println("\nJSON to Struct: ")
+	// fmt.Printf("%+v\n", user)
+
 }
